@@ -114,11 +114,13 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <h2 class="title is-2">Teaser Video</h2>
-          <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-            <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          <div class="video-container" style="position: relative; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+            <!-- <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
               <source src="/resources/teaser.mp4" type="video/mp4">
               Your browser does not support the video tag.
-            </video>
+            </video> -->
+            <video controls autoplay loop muted playsinline src="/resources/teaser.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;"></video>
+
           </div>
         </div>
       </div>
