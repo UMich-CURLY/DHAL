@@ -50,28 +50,22 @@
         <div class="container is-size-5">
           <div class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item pl-4 pr-4" href="./resources/DHAL.pdf">
-                <span class="icon" style="margin-right:5px;">
-                  <img src="./static/images/pdf.svg" alt="PDF" />
-                </span>
-                <span>Paper</span>
-              </a>
               <a class="navbar-item  pl-4 pr-4" href="https://arxiv.org/abs/2503.01842">
                 <span class="icon" style="margin-right:5px;">
                   <img src="./static/images/arxiv.svg" alt="ArXiv" />
                 </span>
                 <span>arXiv</span> </a>
-              <a href="TBD" class="navbar-item  pl-4 pr-4">
+              <a href="https://umich-curly.github.io/DHAL/" class="navbar-item  pl-4 pr-4">
                 <span class="icon" style="margin-right:5px;">
                   <img src="./static/images/youtube.svg" alt="Youtube" />
                 </span>
                 <span>Video</span> </a>
               <span class="navbar-item  pl-4 pr-4">
-                <a href="TBD" class="button is-inverted is-large">
+                <a href="https://github.com/UMich-CURLY/DHAL" class="button is-inverted is-large">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
-                  <span>Code(coming soon)</span>
+                  <span>Code</span>
                 </a>
               </span>
             </div>
@@ -153,7 +147,7 @@
       <img src="./resources/method.png"></img>
     </div> -->
     <p style="text-align: justify; text-justify: inter-word;">
-      This paper introduces Discrete-time Hybrid Automata Learning (DHAL), a framework using on-policy Reinforcement Learning to identify and execute mode-switching without trajectory segmentation or event function learning. Hybrid dynamical systems, which include continuous flow and discrete mode switching, can model robotics tasks like legged robot locomotion. Model-based methods depend on predefined gaits, while model-free approaches lack explicit mode-switching knowledge. Current methods identify discrete modes via segmentation before regressing continuous flow, but learning high-dimensional complex rigid body dynamics without trajectory labels or segmentation is a challenging open problem. Our approach incorporates a beta policy distribution and a multi-critic architecture to model contact-guided motions, exemplified by a challenging quadrupedal robot skateboard task. We validate our method through simulations and real-world tests, demonstrating robust performance in hybrid dynamical systems.
+      Hybrid dynamical systems, which include continuous flow and discrete mode switching, can model robotics tasks like legged robot locomotion. Model-based methods usually depend on predefined gaits, while model-free approaches lack explicit mode-switching knowledge. Current methods identify discrete modes via segmentation before regressing continuous flow, but learning high-dimensional complex rigid body dynamics without trajectory labels or segmentation is a challenging open problem. This paper introduces Discrete-time Hybrid Automata Learning (DHAL), a framework to identify and execute mode-switching without trajectory segmentation or event function learning. Moreover, we embed it in a reinforcement learning pipeline and incorporate a beta policy distribution and a multi-critic architecture to model contact-guided motions, exemplified by a challenging quadrupedal robot skateboard task. We validate our method through sufficient real-world tests, demonstrating robust performance and mode identification consistent with human intuition in hybrid dynamical systems.
     </p>
   </div>
 </section>
@@ -194,6 +188,18 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+
+<section class="section">
+  <h2 class="title is-2" style="text-align: center;">Recovery</h2>
+  <div class="container has-text-centered">
+    <video controls autoplay loop muted playsinline
+      src="./resources/fail/dhal-fail-1-1.mp4"
+      poster="./resources/loading-icon.gif"
+      style="width: 100%; max-width: 960px; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+    </video>
   </div>
 </section>
 
@@ -293,18 +299,49 @@
   </div>
 </section>
 
-
-<section class="section">
-  <h2 class="title is-2" style="text-align: center;">Failure Case</h2>
+<!-- <section class="section">
   <div class="container">
+    <h2 class="title is-2" style="text-align: center;" id="press-coverage">Media</h2>
+    <br>
     <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/fail/dhal-fail-1-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      <!-- </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/slowmotion/dhal-slow-5-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div> -->
-    </div>
+      <div class="column is-centered has-text-centered" style="background-color: #1C1A38;">
+        <a target="_blank" href="https://techxplore.com/news/2025-03-legged-robots-skateboard-successfully-framework.html">
+          <img src="https://techx.b-cdn.net/tmpl/v2/img/logotype.svg" width="100%"></img>
+        </a>
+      </div>
+      <div class="column is-centered has-text-centered" style="background-color: #080717;">
+        <a target="_blank" href="https://venturebeat.com/ai/open-television-why-human-intelligence-could-be-the-key-to-next-gen-robotic-automation/">
+          <img src="https://cdn.zmescience.com/wp-content/uploads/2022/12/zme-logo-small-1.webp" width="100%"></img>
+        </a>
+      </div>
+      
+      <div class="column is-centered has-text-centered" style="background-color: #080717;">
+        <a target="_blank" href="https://www.therobotreport.com/mit-uc-san-diego-researchers-create-open-television-immersive-teleoperation/">
+          <img src="https://assets.iflscience.com/svg/logo/_logo.svg" width="100%"></img>
+        </a>
+      </div>
+      <div class="column is-centered has-text-centered" style="background-color: #2A73B4;">
+        <a target="_blank" href="https://interestingengineering.com/innovation/open-television-robotics-control">
+          <img src="https://interestingengineering.com/img/logo.svg" width="100%"></img>
+        </a>
+      </div>
+  </div>
+</section> -->
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>
+      @misc{liu2025discretetimehybridautomatalearning,
+        title={Discrete-Time Hybrid Automata Learning: Legged Locomotion Meets Skateboarding}, 
+        author={Hang Liu and Sangli Teng and Ben Liu and Wei Zhang and Maani Ghaffari},
+        year={2025},
+        eprint={2503.01842},
+        archivePrefix={arXiv},
+        primaryClass={cs.RO},
+        url={https://arxiv.org/abs/2503.01842}, 
+  }
+</code></pre>
   </div>
 </section>
 
